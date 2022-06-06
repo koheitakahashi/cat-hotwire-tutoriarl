@@ -1,7 +1,10 @@
 <% if notice %>
-  <div class="alert alert-primary alert-dismissible">
-    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-    <%= notice %>
+  <div class="mb-2 toast hide border-primary" data-controller="toast">
+    <div class="toast-header text-primary">
+      <strong class="me-auto"><%= icon_with_text("check-circle") %></strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body"><%= notice %></div>
   </div>
 <% end %>
 
